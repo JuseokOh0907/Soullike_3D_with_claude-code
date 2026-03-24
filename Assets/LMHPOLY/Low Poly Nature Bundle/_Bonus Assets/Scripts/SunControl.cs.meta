@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: a3ab825044fff35498ec356ff81fea3c
+timeCreated: 1470206450
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 223104
+  packageName: Low Poly Nature Bundle
+  packageVersion: 1.5
+  assetPath: Assets/LMHPOLY/Low Poly Nature Bundle/_Bonus Assets/Scripts/SunControl.cs
+  uploadId: 808976

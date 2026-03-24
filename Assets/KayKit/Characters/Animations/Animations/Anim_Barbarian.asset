@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b94381390246b3449acfdd12f81e7ea3, type: 3}
+  m_Name: Anim_Barbarian
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerAnimationData
+  job: 0
+  idle: {fileID: 7400000, guid: 36d07daca3be57444831118de913924d, type: 2}
+  walk: {fileID: 7400000, guid: 47e6058508825d14885667715ee375e8, type: 2}
+  run: {fileID: 7400000, guid: 3030e88aa7d247b4797c1d0b1c742a26, type: 2}
+  dodge: {fileID: 7400000, guid: 4292eee79fb90d44c85528c0599197a1, type: 2}
+  attack: {fileID: 7400000, guid: b0789f66792a0a44d98e0c04a806fc7e, type: 2}
+  attackAlt: {fileID: 7400000, guid: 2aab1f80daa69e1418fbf81b1898bb82, type: 2}
+  block: {fileID: 7400000, guid: c8bf9df858aaf70419f31a59244ca782, type: 2}
+  shootPrepare: {fileID: 0}
+  shootCharge: {fileID: 0}
+  shootFire: {fileID: 0}
+  prepareDelay: 0.4
+  chargeDelay: 0.6
+  fireEventTime: 0.15
+  hit: {fileID: 7400000, guid: 5723a5830e34aa347a0f04446374a546, type: 2}
+  death: {fileID: 7400000, guid: b613000e3692df142b37e58b11a66b3b, type: 2}

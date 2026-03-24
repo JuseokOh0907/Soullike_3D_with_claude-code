@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b94381390246b3449acfdd12f81e7ea3, type: 3}
+  m_Name: Anim_Druid
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerAnimationData
+  job: 7
+  idle: {fileID: 7400000, guid: 0266969df1a29bf4ebae30e305b70919, type: 2}
+  walk: {fileID: 7400000, guid: 8e7f36240ba08874bb12d3166c9d4d48, type: 2}
+  run: {fileID: 7400000, guid: 9d71fb32f64efb44da5c609835484db6, type: 2}
+  dodge: {fileID: 7400000, guid: 2b1da071970cfe84d847b891738247a9, type: 2}
+  attack: {fileID: 7400000, guid: 0c756f6fb9800fe44b6a100951b6dd6c, type: 2}
+  attackAlt: {fileID: 7400000, guid: 73b8bb414a9fea0488ff2aeeb18c6ab6, type: 2}
+  block: {fileID: 0}
+  shootPrepare: {fileID: 7400000, guid: 0266969df1a29bf4ebae30e305b70919, type: 2}
+  shootCharge: {fileID: 7400000, guid: 0c756f6fb9800fe44b6a100951b6dd6c, type: 2}
+  shootFire: {fileID: 7400000, guid: 8568229dd007b224fb181a6e14ec8205, type: 2}
+  prepareDelay: 0.3
+  chargeDelay: 1.2
+  fireEventTime: 0.2
+  hit: {fileID: 7400000, guid: 4ea83184c1588b846b2042c78e335418, type: 2}
+  death: {fileID: 7400000, guid: b613000e3692df142b37e58b11a66b3b, type: 2}

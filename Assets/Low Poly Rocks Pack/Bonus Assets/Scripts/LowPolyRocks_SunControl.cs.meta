@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 36db73dfa9b52c84dabf7d0fda5e7dcc
+timeCreated: 1470206450
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 70164
+  packageName: Low Poly Rocks Pack
+  packageVersion: 1.3.8
+  assetPath: Assets/Low Poly Rocks Pack/Bonus Assets/Scripts/LowPolyRocks_SunControl.cs
+  uploadId: 808788

@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 55dd08e873a3a864d9a02c8fdbfd44b0
+timeCreated: 1470208021
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 223104
+  packageName: Low Poly Nature Bundle
+  packageVersion: 1.5
+  assetPath: Assets/LMHPOLY/Low Poly Nature Bundle/_Bonus Assets/Scripts/CameraControl.cs
+  uploadId: 808976
