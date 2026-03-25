@@ -53,6 +53,28 @@ public class PlayerAnimationData : ScriptableObject
     public AnimationClip death;
 
     // ════════════════════════════════════════════════════════════════════════════
+    // 원거리 / 마법 공격 시퀀스 (Shoot Sequence)
+    // ════════════════════════════════════════════════════════════════════════════
+    [Header("── 원거리 공격 시퀀스 (Shoot) ─────────────")]
+    [Tooltip("조준/예비 동작 클립")]
+    public AnimationClip shootPrepare;
+
+    [Tooltip("조준 후 다음 단계까지 대기 시간 (초)")]
+    public float prepareDelay = 0.5f;
+
+    [Tooltip("차지/장전 클립 (없으면 생략)")]
+    public AnimationClip shootCharge;
+
+    [Tooltip("차지 후 발사까지 대기 시간 (초)")]
+    public float chargeDelay = 0.3f;
+
+    [Tooltip("발사 클립")]
+    public AnimationClip shootFire;
+
+    [Tooltip("발사 클립 시작 후 OnFireEvent를 발생시킬 시간 (초)")]
+    public float fireEventTime = 0.2f;
+
+    // ════════════════════════════════════════════════════════════════════════════
     // KayKit 기본 클립 경로 (에디터 전용)
     // ════════════════════════════════════════════════════════════════════════════
     private const string M = "Assets/KayKit/Characters/Animations/Animations/Rig_Medium/";
@@ -183,4 +205,10 @@ public class AnimClipPaths
     public string jump;
     public string hit;
     public string death;
+    public string shootPrepare;
+    public string shootCharge;
+    public string shootFire;
+    public float  prepareDelay  = 0.5f;
+    public float  chargeDelay   = 0.3f;
+    public float  fireEventTime = 0.2f;
 }

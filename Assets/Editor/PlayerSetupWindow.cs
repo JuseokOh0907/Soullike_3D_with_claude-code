@@ -266,21 +266,21 @@ public class PlayerSetupWindow : EditorWindow
             var asset = ScriptableObject.CreateInstance<PlayerAnimationData>();
             asset.job = job;
 
-            asset.idle         = LoadClip(paths.idle);
-            asset.walk         = LoadClip(paths.walk);
-            asset.run          = LoadClip(paths.run);
-            asset.dodge        = LoadClip(paths.dodge);
-            asset.attack       = LoadClip(paths.attack);
-            asset.attackAlt    = LoadClip(paths.attackAlt);
-            asset.block        = LoadClip(paths.block);
+            asset.armedIdle    = LoadClip(paths.armedIdle);
+            asset.armedWalk    = LoadClip(paths.armedWalk);
+            asset.armedRun     = LoadClip(paths.armedRun);
+            asset.unarmedIdle  = LoadClip(paths.unarmedIdle);
+            asset.unarmedWalk  = LoadClip(paths.unarmedWalk);
+            asset.unarmedRun   = LoadClip(paths.unarmedRun);
+            asset.jump         = LoadClip(paths.jump);
+            asset.hit          = LoadClip(paths.hit);
+            asset.death        = LoadClip(paths.death);
             asset.shootPrepare = LoadClip(paths.shootPrepare);
             asset.shootCharge  = LoadClip(paths.shootCharge);
             asset.shootFire    = LoadClip(paths.shootFire);
             asset.prepareDelay  = paths.prepareDelay;
             asset.chargeDelay   = paths.chargeDelay;
             asset.fireEventTime = paths.fireEventTime;
-            asset.hit          = LoadClip(paths.hit);
-            asset.death        = LoadClip(paths.death);
 
             string assetPath = $"{folder}/Anim_{job}.asset";
             AssetDatabase.CreateAsset(asset, assetPath);

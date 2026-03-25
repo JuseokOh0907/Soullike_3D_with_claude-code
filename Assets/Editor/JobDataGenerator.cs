@@ -84,7 +84,7 @@ public static class JobDataGenerator
             W("axe_2handed", HandSlot.Right));
 
         d.presets[1] = Preset("한손도끼 + 맥주",
-            speed: "13(15)", atk: "1000(*1.5)", mp: null, stamina: 1200f,
+            speedStr: "13(15)", atk: "1000(*1.5)", mp: null, stamina: 1200f,
             note: "맥주 사용 후 mug_empty로 교체됨 / 맥주 중 속도 13→15, 공격 *1.5",
             W("axe_1handed", HandSlot.Right),
             WChange("mug_full", HandSlot.Left, "mug_empty"));
@@ -115,7 +115,7 @@ public static class JobDataGenerator
             W("axe_2handed", HandSlot.Right));
 
         d.presets[1] = Preset("한손도끼 + 맥주",
-            speed: "6(9)", atk: "2000(*1.5)", mp: null, stamina: 2000f,
+            speedStr: "6(9)", atk: "2000(*1.5)", mp: null, stamina: 2000f,
             note: "맥주 사용 후 mug_empty_Large로 교체됨 / 맥주 중 속도 6→9, 공격 *1.5",
             W("axe_1handed_Large", HandSlot.Right),
             WChange("mug_full_Large", HandSlot.Left, "mug_empty_Large"));

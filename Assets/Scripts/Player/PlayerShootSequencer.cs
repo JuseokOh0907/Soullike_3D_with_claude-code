@@ -95,7 +95,7 @@ public class PlayerShootSequencer : MonoBehaviour
         _sequenceCoroutine = null;
 
         // Return to idle animation
-        PlayClip(animData.idle);
+        PlayClip(animData.armedIdle);
     }
 
     // ── Helpers ────────────────────────────────────────────────────────────────
