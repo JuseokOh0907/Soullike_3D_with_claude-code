@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d90a65b463805504ab440139df868548, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::JobData
+  job: 0
+  jobNameKR: "\uBC14\uBC14\uB9AC\uC548 (\uC18C\uD615)"
+  hp: 4000
+  presets:
+  - presetName: "\uC591\uC190\uB3C4\uB07C"
+    speed: 12
+    attackValue: 1250
+    mpCostValue: 
+    stamina: 1200
+    weaponSlots:
+    - prefabName: axe_2handed
+      hand: 0
+      changeToOnUse: 
+    note: 
+  - presetName: "\uD55C\uC190\uB3C4\uB07C + \uB9E5\uC8FC"
+    speed: 13
+    attackValue: 1000(*1.5)
+    mpCostValue: 
+    stamina: 1200
+    weaponSlots:
+    - prefabName: axe_1handed
+      hand: 0
+      changeToOnUse: 
+    - prefabName: mug_full
+      hand: 1
+      changeToOnUse: mug_empty
+    note: "\uB9E5\uC8FC \uC0AC\uC6A9 \uD6C4 mug_empty\uB85C \uAD50\uCCB4\uB428 /
+      \uB9E5\uC8FC \uC911 \uC18D\uB3C4 13\u219215, \uACF5\uACA9 *1.5\n\uC18D\uB3C4
+      \uBC94\uC704: 13(15)"
+  - presetName: "\uD55C\uC190\uB3C4\uB07C + \uBC29\uD328"
+    speed: 13
+    attackValue: 1000
+    mpCostValue: 
+    stamina: 1200
+    weaponSlots:
+    - prefabName: axe_1handed
+      hand: 0
+      changeToOnUse: 
+    - prefabName: shield_round_barbarian
+      hand: 1
+      changeToOnUse: 
+    note: 
+  specialAbility: "\uB9E5\uC8FC \uC774\uC6A9 \uC2DC \uCCB4\uB825 \uBC0F \uACF5\uACA9\uB825
+    \uC99D\uAC00"
+  specialAbilityDetail: "\uCCB4\uB825 40% \uC774\uD558\uC778 \uACBD\uC6B0 \uC2A4\uD0DC\uBBF8\uB098
+    \uC18C\uBAA8\uB7C9 50% \uAC10\uC18C"

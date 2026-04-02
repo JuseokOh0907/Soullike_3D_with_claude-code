@@ -15,7 +15,8 @@ public class PlayerSetupWindow : EditorWindow
 
     private static readonly string[] PlayerLabels = { "Player 1", "Player 2", "Player 3", "Player 4" };
 
-    private const string SpawnedRootName = "--- Spawned Players ---";
+    private const string SpawnedRootName  = "--- Spawned Players ---";
+    private const string SpawnPointsRoot  = "SpawnPoints";
 
     // ── State ──────────────────────────────────────────────────────────────────
     private PlayerSetupData _data;
@@ -156,8 +157,21 @@ public class PlayerSetupWindow : EditorWindow
 
         // Spawn transform
         EditorGUILayout.LabelField("Spawn Transform", EditorStyles.boldLabel);
-        cfg.spawnPosition = EditorGUILayout.Vector3Field("Position", cfg.spawnPosition);
-        cfg.spawnRotationY = EditorGUILayout.Slider("Rotation Y", cfg.spawnRotationY, -180f, 180f);
+        var spawnPt = GetSpawnPoint(index);
+        if (spawnPt != null)
+        {
+            EditorGUILayout.HelpBox($"Using Hierarchy: {SpawnPointsRoot} / {spawnPt.name}", MessageType.None);
+            EditorGUI.BeginDisabledGroup(true);
+            EditorGUILayout.Vector3Field("Position (SpawnPoint)", spawnPt.position);
+            EditorGUILayout.Slider("Rotation Y (SpawnPoint)", spawnPt.eulerAngles.y, -180f, 180f);
+            EditorGUI.EndDisabledGroup();
+        }
+        else
+        {
+            EditorGUILayout.HelpBox($"No SpawnPoints child [{index}] found — using manual values.", MessageType.Warning);
+            cfg.spawnPosition = EditorGUILayout.Vector3Field("Position", cfg.spawnPosition);
+            cfg.spawnRotationY = EditorGUILayout.Slider("Rotation Y", cfg.spawnRotationY, -180f, 180f);
+        }
 
         GUILayout.Space(4);
         EditorGUILayout.EndVertical();
@@ -329,8 +343,19 @@ public class PlayerSetupWindow : EditorWindow
 
             var go = (GameObject)PrefabUtility.InstantiatePrefab(prefab, root.transform);
             go.name = $"[P{i + 1}] {cfg.playerName} ({PlayerSetupData.GetJobDisplayName(cfg.job)})";
-            go.transform.position = cfg.spawnPosition;
-            go.transform.rotation = Quaternion.Euler(0, cfg.spawnRotationY, 0);
+
+            var spawnPt = GetSpawnPoint(i);
+            if (spawnPt != null)
+            {
+                go.transform.position = spawnPt.position;
+                go.transform.rotation = spawnPt.rotation;
+                Debug.Log($"[PlayerSetup] P{i + 1} spawned at SpawnPoints/{spawnPt.name}");
+            }
+            else
+            {
+                go.transform.position = cfg.spawnPosition;
+                go.transform.rotation = Quaternion.Euler(0, cfg.spawnRotationY, 0);
+            }
 
             // Attach weapons to hand bones
             AttachJobLoadout(go, cfg.job);
@@ -424,6 +449,19 @@ public class PlayerSetupWindow : EditorWindow
         light.color = color;
         light.intensity = 1.5f;
         light.range = 3f;
+    }
+
+    // ── SpawnPoints helper ─────────────────────────────────────────────────────
+    /// <summary>
+    /// Hierarchy에서 "SpawnPoints" 오브젝트의 playerIndex번째 자식을 반환합니다.
+    /// 자식이 없거나 인덱스 초과 시 null 반환.
+    /// </summary>
+    private static Transform GetSpawnPoint(int playerIndex)
+    {
+        var spawnRoot = GameObject.Find(SpawnPointsRoot);
+        if (spawnRoot == null || spawnRoot.transform.childCount <= playerIndex)
+            return null;
+        return spawnRoot.transform.GetChild(playerIndex);
     }
 
     // ── Asset management ───────────────────────────────────────────────────────

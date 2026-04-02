@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d90a65b463805504ab440139df868548, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::JobData
+  job: 7
+  jobNameKR: "\uB4DC\uB8E8\uC774\uB4DC"
+  hp: 3500
+  presets:
+  - presetName: "\uD68C\uBCF5 \uBB3C\uC57D (\uBE68\uAC15/\uD30C\uB791)"
+    speed: 13
+    attackValue: Hp+5~25% / Mp+5~25%
+    mpCostValue: "\uB4F1\uAE09\uBCC4 \uC18C\uC9C4/80"
+    stamina: 1500
+    weaponSlots:
+    - prefabName: potion_small_red
+      hand: 1
+      changeToOnUse: 
+    - prefabName: potion_medium_red
+      hand: 1
+      changeToOnUse: 
+    - prefabName: potion_large_red
+      hand: 1
+      changeToOnUse: 
+    - prefabName: potion_huge_red
+      hand: 1
+      changeToOnUse: 
+    - prefabName: potion_small_blue
+      hand: 1
+      changeToOnUse: 
+    - prefabName: potion_medium_blue
+      hand: 1
+      changeToOnUse: 
+    - prefabName: potion_large_blue
+      hand: 1
+      changeToOnUse: 
+    - prefabName: potion_huge_blue
+      hand: 1
+      changeToOnUse: 
+    note: "\uD06C\uAE30\uBCC4 \uD6A8\uACFC\uC728 \uC0C1\uC774. \uBE68\uAC15=HP \uD68C\uBCF5,
+      \uD30C\uB791=MP \uD68C\uBCF5\npotion_small/medium/large/huge \xD7 red, blue"
+  - presetName: "\uACF5\uACA9/\uC18D\uB3C4 \uBC84\uD504 \uBB3C\uC57D (\uCD08\uB85D/\uC8FC\uD669)"
+    speed: 15
+    attackValue: "atk+10~50% / \uC18D\uB3C4+10~50%"
+    mpCostValue: "\uB4F1\uAE09\uBCC4 \uC18C\uC9C4/80"
+    stamina: 1500
+    weaponSlots:
+    - prefabName: potion_small_green
+      hand: 1
+      changeToOnUse: 
+    - prefabName: potion_medium_green
+      hand: 1
+      changeToOnUse: 
+    - prefabName: potion_large_green
+      hand: 1
+      changeToOnUse: 
+    - prefabName: potion_huge_green
+      hand: 1
+      changeToOnUse: 
+    - prefabName: potion_small_orange
+      hand: 1
+      changeToOnUse: 
+    - prefabName: potion_medium_orange
+      hand: 1
+      changeToOnUse: 
+    - prefabName: potion_large_orange
+      hand: 1
+      changeToOnUse: 
+    - prefabName: potion_huge_orange
+      hand: 1
+      changeToOnUse: 
+    note: "\uD06C\uAE30\uBCC4 \uD6A8\uACFC\uC728 \uC0C1\uC774. \uCD08\uB85D=\uACF5\uACA9
+      \uC99D\uAC00, \uC8FC\uD669=\uC18D\uB3C4 \uC99D\uAC00\npotion_small/medium/large/huge
+      \xD7 green, orange"
+  - presetName: "\uB4DC\uB8E8\uC774\uB4DC \uC2A4\uD0DC\uD504"
+    speed: 10
+    attackValue: 800
+    mpCostValue: 2/80
+    stamina: 1500
+    weaponSlots:
+    - prefabName: druid_staff
+      hand: 0
+      changeToOnUse: 
+    note: "\uC2A4\uD0DC\uD504 \uD0C0\uACA9 \uC2DC \uB370\uBBF8\uC9C0\uC758 1% Mp
+      \uD68C\uBCF5"
+  specialAbility: "(\uB514)\uBC84\uD504 \uBB3C\uC57D \uC0DD\uC131 (\uC81C\uC870 \uC2DC\uAC04
+    \uC0C1\uC774: 2/4/6/9s \u2014 \uD6A8\uACFC 5/10/15/25%)"
+  specialAbilityDetail: "\uBB3C\uC57D \uD6A8\uACFC \uC790\uC2E0\uC5D0\uAC8C 50% \uCD94\uAC00
+    \uC801\uC6A9\n\uB9C8\uB098 \uC18C\uBAA8\uB7C9\uC5D0 \uB530\uB77C \uBB3C\uC57D
+    \uB4F1\uAE09 \uC790\uB3D9 \uBCC0\uACBD\n\uBB3C\uC57D \uCD5C\uB300 \uC18C\uC9C0
+    10\uAC1C\n\uD3EC\uD0D1 \uC124\uCE58 \uC2DC 2\uCD08\uB2F9 1\uD68C \uC790\uB3D9
+    \uACF5\uACA9 / \uBC94\uC704 \uC2AC\uB85C\uC6B0 (\uC124\uCE58\uC2DC\uAC04 15\uCD08)"

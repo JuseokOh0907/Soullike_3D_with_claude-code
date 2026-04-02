@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d90a65b463805504ab440139df868548, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::JobData
+  job: 3
+  jobNameKR: "\uB808\uC778\uC800"
+  hp: 2800
+  presets:
+  - presetName: "\uD65C + \uD654\uC0B4 (\uCC28\uC9D5)"
+    speed: 18
+    attackValue: "1000 * \uCC28\uC9D5\uC2DC\uAC04 (max 5s)"
+    mpCostValue: 
+    stamina: 1050
+    weaponSlots:
+    - prefabName: bow_withString
+      hand: 0
+      changeToOnUse: 
+    - prefabName: arrow_bow_bundle
+      hand: 1
+      changeToOnUse: 
+    - prefabName: arrow_bow
+      hand: 0
+      changeToOnUse: 
+    note: "\uCC28\uC9D5 \uC911 arrow_bow \uD45C\uC2DC / bow_withString + arrow_bow_bundle
+      \uAE30\uBCF8 \uC7A5\uCC29"
+  - presetName: "\uC5F0\uC0AC \uD654\uC0B4"
+    speed: 20
+    attackValue: "800 / (\uD654\uC0B4 \uAC1C\uC218 40)"
+    mpCostValue: 
+    stamina: 1050
+    weaponSlots:
+    - prefabName: arrow_bow
+      hand: 0
+      changeToOnUse: 
+    note: "arrow_bow \uB2E8\uB3C5 \uC0AC\uC6A9"
+  - presetName: "\uD65C (\uB2E8\uC21C)"
+    speed: 20
+    attackValue: 1200
+    mpCostValue: 
+    stamina: 1050
+    weaponSlots:
+    - prefabName: bow
+      hand: 0
+      changeToOnUse: 
+    note: "\uD65C \uCC28\uC9D5 \uC2DC\uAC04 \uB3D9\uC548 \uC774\uB3D9\uC18D\uB3C4
+      4.5"
+  specialAbility: "\uD654\uC0B4 \uCD1D 40\uAC1C / \uC218\uB9AC \uBD88\uAC00"
+  specialAbilityDetail: "\uB370\uBBF8\uC9C0 \uCD5C\uB300 5\uCD08 \uCC28\uC9D5 / \uD65C
+    \uCC28\uC9D5 \uC2DC\uAC04 \uB3D9\uC548 \uC774\uB3D9\uC18D\uB3C4 4.5"

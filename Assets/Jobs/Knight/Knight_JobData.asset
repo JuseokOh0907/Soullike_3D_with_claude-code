@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d90a65b463805504ab440139df868548, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::JobData
+  job: 2
+  jobNameKR: "\uAE30\uC0AC"
+  hp: 3500
+  presets:
+  - presetName: "\uC591\uC190\uB300\uAC80"
+    speed: 10
+    attackValue: 1800
+    mpCostValue: 
+    stamina: 1000
+    weaponSlots:
+    - prefabName: sword_2handed_color
+      hand: 0
+      changeToOnUse: 
+    note: "\uC591\uC190\uAC80 \uC804\uC6A9 \u2014 \uAC15\uB825\uD55C \uB2E8\uC77C
+      \uACF5\uACA9"
+  - presetName: "\uB300\uAC80 + \uC6D0\uD615 \uBC29\uD328"
+    speed: 7
+    attackValue: 1500
+    mpCostValue: 
+    stamina: 1000
+    weaponSlots:
+    - prefabName: sword_2handed
+      hand: 0
+      changeToOnUse: 
+    - prefabName: shield_round
+      hand: 1
+      changeToOnUse: 
+    note: "sword_2handed scale * 70% \uC801\uC6A9"
+  - presetName: "\uD55C\uC190\uAC80 + \uB300\uD615 \uBC29\uD328"
+    speed: 7
+    attackValue: 1300
+    mpCostValue: 
+    stamina: 1000
+    weaponSlots:
+    - prefabName: sword_1handed
+      hand: 0
+      changeToOnUse: 
+    - prefabName: shield_square
+      hand: 1
+      changeToOnUse: 
+    note: "\uBC29\uC5B4\uB825 \uCD5C\uC6B0\uC120 \uC138\uD305"
+  specialAbility: "\uBC29\uD328 \uB9C9\uAE30 \uB370\uBBF8\uC9C0 90% \uAC10\uC18C"
+  specialAbilityDetail: "\uB300\uAC80 3\uC5F0\uACA9 \uC2DC atk 50% \uC99D\uAC00"
