@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d90a65b463805504ab440139df868548, type: 3}
-  m_Name: 
+  m_Name: Rogue_JobData
   m_EditorClassIdentifier: Assembly-CSharp::JobData
   job: 4
-  jobNameKR: "\uC545\uB3D9 (\uB85C\uADF8)"
+  jobNameKR: Rogue
   hp: 1600
   presets:
-  - presetName: "\uD55C\uC190 \uC11D\uAD81"
+  - presetName: One-Handed Crossbow
     speed: 13
     attackValue: 1200
     mpCostValue: 
@@ -31,8 +31,8 @@ MonoBehaviour:
     - prefabName: arrow_crossbow
       hand: 0
       changeToOnUse: 
-    note: "\uCC28\uC9D5 \uC911 arrow_crossbow \uD45C\uC2DC"
-  - presetName: "\uC591\uC190 \uC11D\uAD81"
+    note: Shows arrow_crossbow while charging
+  - presetName: Two-Handed Crossbow
     speed: 11
     attackValue: 1800
     mpCostValue: 
@@ -47,10 +47,10 @@ MonoBehaviour:
     - prefabName: arrow_crossbow
       hand: 0
       changeToOnUse: 
-    note: "\uCC28\uC9D5 \uC911 arrow_crossbow \uD45C\uC2DC"
-  - presetName: "\uB2E8\uAC80 + \uC5F0\uB9C9\uD0C4"
+    note: Shows arrow_crossbow while charging
+  - presetName: Dagger + Smokebomb
     speed: 18
-    attackValue: "\uD22C\uCC99 1500+\uB3C4\uD2B8*2 / \uADFC\uC811 1000+\uB3C4\uD2B8"
+    attackValue: Throw 1500+DoT*2 / Melee 1000+DoT
     mpCostValue: 
     stamina: 1800
     weaponSlots:
@@ -60,11 +60,15 @@ MonoBehaviour:
     - prefabName: smokebomb
       hand: 1
       changeToOnUse: 
-    note: "\uB2E8\uAC80: \uBCA0\uAE30 \uAC00\uB2A5, \uB358\uC9C4 \uD6C4 \uC9C0\uBA74\uC5D0\uC11C
-      \uD68C\uC218 \uAC00\uB2A5\n\uC5F0\uB9C9\uD0C4: \uD22C\uCC99 \uC804\uC6A9"
-  specialAbility: "\uC545\uB3D9 \uCCB4\uB825 50% \uC774\uD558\uC77C \uB54C \uBC14\uD1A4\uD130\uCE58
-    \uAC00\uB2A5"
-  specialAbilityDetail: "\uB3C4\uD2B8 \uB370\uBBF8\uC9C0 \uCD08\uB2F9 100 (\uB514\uD3F4\uD2B8)\n\uBC14\uD1A4\uD130\uCE58
-    \uB41C \uD30C\uD2B8\uB108 \uCCB4\uB825 100% \uC774\uC0C1 \uC2DC \uACF5\uACA9\uB825
-    \uBC84\uD504\uB85C \uD658\uC0B0\n\uBB34\uAE30 \uC120\uD0DD \uC790\uC720 / \uD30C\uD2B8\uB108\uAC00
-    \uC8FD\uC5B4\uB3C4 \uB0A8\uC740 \uCE90\uB9AD\uD130\uB85C \uD50C\uB808\uC774 \uAC00\uB2A5"
+    note: 'Dagger: can slash, retrieve from ground after throw
+
+      Smokebomb:
+      throw only'
+  specialAbility: Can tag out partner when HP below 50%
+  specialAbilityDetail: 'DoT damage 100/s (default)
+
+    Tagged partner at 100%+
+    HP converts to ATK buff
+
+    Free weapon choice / Can continue with remaining
+    character if partner dies'
